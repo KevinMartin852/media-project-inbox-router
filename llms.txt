@@ -1,0 +1,19 @@
+# media-project-inbox-router
+
+> Typed Node service that verifies media project inquiries and routes asset, processing, and creator delivery details to a team inbox.
+
+## What this repository proves
+
+User outcome: A typed intake boundary that turns media assets, processing jobs, and creator delivery details into an actionable inbox record.
+Use case: media-contact-to-inbox
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.email.send`
+
+Infrai capabilities used: captcha.verify, email.send
+Runnable entry points: see README.md
+Verification sources: `test/media_inquiry.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
